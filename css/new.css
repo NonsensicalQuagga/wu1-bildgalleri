@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+}
+
+.container{
+    width: min(100ch, 80vw -4rem);
+    margin-inline: auto;    
+}
+
+.galery{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+    gap: 1;
+}
+
+.galery img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+
+.galery figure{
+  position: relative; 
+  margin: 1rem; 
+}
+
+
+.galery figcaption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+main {
+    margin-top: 4vh;
+    margin-bottom: 8vh;
+}
